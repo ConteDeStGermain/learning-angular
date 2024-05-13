@@ -1,0 +1,10 @@
+<nav class=" text-white font-light tracking-wider absolute right-0 mt-16 w-3/5 mr-28 z-50 font-roboto">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="#" class="mx-2 hover:text-black" [class.font-bold]="selectedItem === 'home'" (click)="selectItem('home')">Home</a>
+    <a href="#" class="mx-2 hover:text-black" [class.font-bold]="selectedItem === 'popular'" (click)="selectItem('popular')">Popular Places</a>
+    <a href="#" class="mx-2 hover:text-black" [class.font-bold]="selectedItem === 'current'" (click)="selectItem('current')">Current Deals</a>
+    <a href="#" class="mx-2 hover:text-black" [class.font-bold]="selectedItem === 'contact'" (click)="selectItem('contact')">Contact</a>
+    <a href="#" class="mx-2 hover:text-black font-bold" >LOG IN</a>
+    <button class="bg-white text-black pr-10 pl-10 pt-3 pb-3 rounded-xl transition ease-in-out delay-50 hover:bg-blue-300 hover:text-white hover:drop-shadow-lg">Register</button>
+  </div>
+</nav>
