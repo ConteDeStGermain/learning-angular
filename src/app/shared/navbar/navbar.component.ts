@@ -15,16 +15,16 @@ export class NavbarComponent {
     { title: 'Log Out', url: '/logout' }
   ]
   
-  showDropdown = false;
+  menuOpen = false;
   selectedItem: String = 'home';
-
-  toggleDropdown() {
-    this.showDropdown = !this.showDropdown;
-  }
 
   selectItem(item: String): void {
     this.selectedItem = item;
     console.log('Selected Item:', this.selectedItem);
-    this.showDropdown = false; // Optionally hide the dropdown after selection
+  }
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+    console.log('AAAAA')
   }
 }

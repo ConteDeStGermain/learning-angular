@@ -45,6 +45,4 @@ export class CardscarouselComponent {
   getTransform(index: number): string {
     return this.transformations[index];
   }
-
-
 }
