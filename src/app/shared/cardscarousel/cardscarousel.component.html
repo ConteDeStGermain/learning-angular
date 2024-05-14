@@ -1,4 +1,4 @@
-<div class="2xl:w-1/2 md:w-[45%] absolute right-0 flex justify-center items-center h-full">
+<div class="2xl:w-1/2 md:w-[45%] absolute right-0 hidden md:flex justify-center items-center h-full">
   <ng-container *ngFor="let image of images; let i = index">
     <div *ngIf="image" class="absolute drop-shadow-lg transition duration-700 ease-in-out"
          [ngClass]="{'z-30 left-14 border-solid border-8 border-white': i === 0, 'z-20': i === 1, 'z-10 right-16': i === 2}"
