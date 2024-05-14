@@ -15,7 +15,7 @@
     </svg>
   </div>
 </nav>
-<div *ngIf="menuOpen" class="fixed inset-0  backdrop-blur-md z-50 flex flex-col  justify-center space-y-8 sm:hidden transition duration-700 ease-in-out text-white">
+<div *ngIf="menuOpen" class="fixed inset-0  backdrop-blur-md z-50 flex flex-col  justify-center space-y-8 md:hidden transition duration-700 ease-in-out text-white">
   <a href="#" class="mx-2 hover:text-black text-3xl ml-6" [class.font-bold]="selectedItem === 'home'" (click)="selectItem('home'); toggleMenu()">Home</a>
   <a href="#" class="mx-2 hover:text-black text-3xl ml-6" [class.font-bold]="selectedItem === 'popular'" (click)="selectItem('popular'); toggleMenu()">Popular Places</a>
   <a href="#" class="mx-2 hover:text-black text-3xl ml-6" [class.font-bold]="selectedItem === 'current'" (click)="selectItem('current'); toggleMenu()">Current Deals</a>
